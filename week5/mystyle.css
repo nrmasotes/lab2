@@ -1,0 +1,115 @@
+
+	  .topnav {
+        overflow: auto;
+        background-color: #140101;
+        width: 100%;
+      }
+  
+      .topnav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Courier New', monospace;
+        border-bottom: 3px solid transparent;
+      }
+  
+      .topnav b {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Courier New', monospace;
+        border-bottom: 3px solid transparent;
+      }
+      .topnav a:hover {
+        border-bottom: 3px solid violet;
+      }
+  
+      .topnav a.active {
+        border-bottom: 3px solid violet;
+          }
+
+    .header {
+            color: black;
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 50px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 1px;
+            padding-right: 3px;
+            overflow: hidden;
+    }
+      
+    .header h1 {
+          float: left;
+          color: black;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 60px;
+          line-height: 25px;    
+    }         
+	.column1 {
+        float: left;
+        width: 65%;
+        overflow: hidden;
+    }
+
+    .column2 {
+        float: right;
+        width: 65%;
+        overflow: hidden;
+    }
+    .row {
+        margin: auto;
+        padding: 10px;
+        min-height:300px;
+        margin: 20px 20px 0 0;
+        position: relative;
+        z-index: 1; 
+    }
+    h1 {
+        border-radius: 30px; 
+        border: 3px solid violet;
+        font-family: 'Courier New', cursive;
+	    text-align: left;
+        font-size: 60px;
+        padding: 15px;
+        color: white;
+        margin-left: 1px;
+        margin-top: 50px;
+    }
+  
+    h2 {
+        background-color: black;
+        border: 2px solid violet;
+        font-family: 'Courier New', cursive;
+	    text-align: center;
+        font-size: 60px;
+        padding: 10px;
+        color: white;
+        margin-left: 1px;
+    }
+  
+    p {
+        font-family: 'Courier New', monospace;
+        font-size: 20px;
+        color: black;
+        margin-left: 1px ;
+    }
+
+    h3 {
+        font-family: 'Courier New', monospace;
+        font-size: 30px;
+        color: black;
+        margin-left: 1px ;
+    }
+

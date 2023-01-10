@@ -92,24 +92,24 @@
         background-color: black;
         border: 2px solid violet;
         font-family: 'Courier New', cursive;
-	    text-align: center;
+	      text-align: center;
         font-size: 60px;
         padding: 10px;
         color: white;
         margin-left: 1px;
     }
-  
+    h3 {
+        font-family: 'Open Sans';
+        font-size: 60px;
+        color: black;
+        margin-left: 1px ;
+    }
     p {
-        font-family: 'Courier New', monospace;
-        font-size: 20px;
+        font-family: 'Open Sans', monospace;
+        font-size: 18px;
         color: black;
         margin-left: 1px ;
     }
 
-    h3 {
-        font-family: 'Courier New', monospace;
-        font-size: 30px;
-        color: black;
-        margin-left: 1px ;
-    }
+
 

@@ -2,24 +2,20 @@
 <html>
 <body>
 
-<h2>JavaScript Strings</h2>
-
-<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+<h2>JavaScript Booleans</h2>
+<p>Booleans and Boolean objects cannot be safely compared:</p>
 
 <p id="demo"></p>
 
 <script>
-let answer1 = "It's alright";
-let answer2 = "He is called 'Johnny'";
-let answer3 = 'He is called "Johnny"';
+// x is a boolean
+let x = false;
 
-document.getElementById("demo").innerHTML =
-answer1 + "<br>" + 
-answer2 + "<br>" + 
-answer3;
+// y is an object
+let y = new Boolean(false);
+
+document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
 </script>
 
 </body>
 </html>
-
-

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>JavaScript Dates</h1>
-<h2>The getFullYear() Method</h2>
-<p>Return the full year of a date object:</p>
+
+<h2>JavaScript setFullYear()</h2>
+<p>The setFullYear() method sets the year of a date object:</p>
 
 <p id="demo"></p>
 
 <script>
-const d = new Date("2021-03-25")
-document.getElementById("demo").innerHTML = d.getFullYear();
+const d = new Date();
+d.setFullYear(2020);
+document.getElementById("demo").innerHTML = d;
 </script>
 
 </body>

@@ -2,25 +2,24 @@
 <html>
 <body>
 
-<h2>JavaScript const</h2>
+<h2>JavaScript Strings</h2>
 
-<p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
 
 <p id="demo"></p>
 
 <script>
-// Create an object:
-const car = {type:"Fiat", model:"500", color:"white"};
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
 
-// Change a property:
-car.color = "red";
-
-// Add a property:
-car.owner = "Johnson";
-
-// Display the property:
-document.getElementById("demo").innerHTML = "Car owner is " + car.owner; 
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + 
+answer2 + "<br>" + 
+answer3;
 </script>
 
 </body>
 </html>
+
+

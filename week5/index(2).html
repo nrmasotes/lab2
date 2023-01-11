@@ -2,21 +2,22 @@
 <html>
 <body>
 
-<h2>JavaScript Variables</h2>
-
-<p>In this example, x, y, and z are variables.</p>
+<h2>Redeclaring a Variable Using var</h2>
 
 <p id="demo"></p>
 
 <script>
-let x = 5;
-let y = 6;
-let z = x + y;
-document.getElementById("demo").innerHTML =
-"The value of z is: " + z;
+var  x = 10;
+// Here x is 10
+
+{  
+var x = 2;
+// Here x is 2
+}
+
+// Here x is 2
+document.getElementById("demo").innerHTML = x;
 </script>
 
 </body>
 </html>
-
-

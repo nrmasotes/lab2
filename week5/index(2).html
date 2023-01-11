@@ -2,21 +2,20 @@
 <html>
 <body>
 
-<h2>JavaScript Math Constants</h2>
+<h1>JavaScript Strings</h1>
+<p>Strings are written inside quotes. You can use single or double quotes:</p>
 
 <p id="demo"></p>
 
 <script>
-document.getElementById("demo").innerHTML = 
-"<p><b>Math.E:</b> " + Math.E + "</p>" +
-"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
-"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
-"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
-"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
-"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
-"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
-"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+let carName1 = "Volvo XC60"; // Double quotes
+let carName2 = 'Volvo XC60'; // Single quotes
+
+document.getElementById("demo").innerHTML =
+carName1 + " " + carName2; 
 </script>
 
 </body>
 </html>
+
+

@@ -3,6 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="mystyle.css">
+	<link rel="javascript" href="jees.js">
 	<link rel="shortcut icon" type="image/png" href="nhm (3).png">
     <title>nrmasotes</title>
 </head>
@@ -40,8 +41,29 @@
 	  sports&#127936&#127955, reading novels &#128218, and competitive video games &#127918 depending on my mood&#128528 on 
 	  which I feel I want to do. Currently, I am focusing in further developing &#128200 this website. If you wish to give suggestion(s), 
 	  please do contact &#128241 me through my given social media accounts. Though you can email me at nrmasotes@student.apc.edu.ph, please 
-	  be reminded that I cannot answer it on time. Please be guided with my local time. (click to reveal) <button onclick="this.innerHTML=Date()">My local time is...</button></p>
-		
+	  be reminded that I cannot answer it on time. Please be guided with my local time. (click to reveal) 
+	  </p>
+	  <button onclick="this.innerHTML=Date()">My local time is...</button> 
+	  <button onclick="myFunction()">Please click this button if you are visiting this website.</button>
+
+	<p id="demo"></p>
+
+	<script>
+		// W3 school - JS Confirm Box
+		// W3 school - JS Popup Box
+
+	function myFunction() {
+	let text;
+	let person = prompt("Please enter your full name, my friendly visitor:", "Harry Potter");
+	var txt;
+	if (confirm("You've been hacked, " + person + "!")) {
+		txt = " Oh! so you just given up, " + person + "?" + " Just kidding its just a prank.";
+	} else {
+		txt = person + ", you cant accept defeat?" + " Just kidding its just a prank.";
+	}
+	document.getElementById("demo").innerHTML = txt;
+	}
+</script>
 		</div>
 		<div class="pfp">
 			<img src="pfp.gif" 

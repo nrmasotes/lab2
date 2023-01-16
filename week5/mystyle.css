@@ -1,108 +1,122 @@
     body {
-		    background-color: #E8E9EB;
-
-	    }
-
-	  body {margin: 0px;}
+		background-color: #E8E9EB;
+	}
+	  body {
+      margin: 0px;
+  }
 	  .topnav {
-        overflow: auto;
-        background-color: #140101;
-        width: 100%;
-      }
+    overflow: auto;
+    background-color: #140101;
+    width: 100%;
+  }
   
-      .topnav a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 20px;
-        font-family: 'Courier New', monospace;
-        border-bottom: 3px solid transparent;
-      }
+    .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    border-bottom: 3px solid transparent;
+  }
   
     .topnav b {
-        float: right;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 20px;
-        font-family: 'Courier New', monospace;
-        border-bottom: 3px solid transparent;
-      }
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    border-bottom: 3px solid transparent;
+  }
     .topnav a:hover {
-        border-bottom: 3px solid violet;
-      }
+    border-bottom: 3px solid violet;
+  }
   
     .topnav a.active {
-        border-bottom: 3px solid violet;
-          }
+    border-bottom: 3px solid violet;
+  }
 
     .header {
-            color: black;
-            margin-top: 10px;
-            margin-left: 5px;
-            margin-right: 50px;
-            padding-top: 1px;
-            padding-bottom: 1px;
-            padding-left: 1px;
-            padding-right: 3px;
-            overflow: hidden;
-    }
+    color: black;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 50px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 3px;
+    overflow: hidden;
+  }
       
     .header h1 {
-          float: left;
-          color: black;
-          text-align: center;
-          padding: 12px;
-          text-decoration: none;
-          font-size: 60px;
-          line-height: 25px;    
-    }         
-	.column1 {
-        float: left;
-        width: 65%;
-        overflow: hidden;
-    }
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 60px;
+    line-height: 25px;    
+  }         
+	  .column1 {
+    float: left;
+    width: 65%;
+    overflow: hidden;
+  }
 
-    .column2 {
-        float: left;
-        width: 65%;
-        overflow: hidden;
-    }
+    .myportfolio {
+    float: left;
+    width: 65%;
+    overflow: hidden;
+  }
     .row {
-        margin: auto;
-        padding: 10px;
-        min-height:300px;
-        position: relative;
-        z-index: 1; 
-    }
+    margin: auto;
+    padding: 10px;
+    min-height:300px;
+    position: relative;
+    z-index: 1; 
+  }
      h1 {  
-          font-family: 'Arial';
-          font-size: 60px;
-          color: black;
-          margin-left: 10px ;
-      }
+    font-family: 'Arial';
+    font-size: 60px;
+    color: black;
+    margin-left: 10px ;
+  }
     h2 {
-        background-color: black;
-        border: 2px solid violet;
-        font-family: 'Courier New', cursive;
-	      text-align: center;
-        font-size: 60px;
-        padding: 10px;
-        color: white;
-        margin-left: 1px;
-    }
+    background-color: black;
+    border: 2px solid violet;
+    font-family: 'Courier New', cursive;
+	  text-align: center;
+    font-size: 60px;
+    padding: 10px;
+    color: white;
+    margin-left: 1px;
+  }
     p {
-        text-align: justify;
-        font-family: 'Open Sans';
-        font-size: 14px;
-        color: black;
-        margin-left: 10px ;
-    }
-
-
-
+    text-align: justify;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: black;
+    margin-left: 10px ;
+  }
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+    h3 {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #E8E9EB;
+    margin-left: 10px ;
+    font-family: 'Courier New', monospace;
+   }

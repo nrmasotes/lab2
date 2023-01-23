@@ -1,13 +1,10 @@
     body {
 		background-color: #E8E9EB;
+    margin: 0px;
 	}
-	  body {
-      margin: 0px;
-  }
 	  .topnav {
-    overflow: auto;
+    overflow: hidden;
     background-color: #140101;
-    width: 100%;
   }
   
     .topnav a {
@@ -17,29 +14,18 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Courier New', monospace;
     border-bottom: 3px solid transparent;
-  }
-  
-    .topnav b {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Courier New', monospace;
-    border-bottom: 3px solid transparent;
-  }
+    }
     .topnav a:hover {
-    border-bottom: 3px solid violet;
-  }
-  
+      border-bottom: 3px solid violet;
+    }
+
     .topnav a.active {
     border-bottom: 3px solid violet;
-  }
+    }
+
 
     .header {
     color: black;
@@ -99,7 +85,7 @@
     p {
     text-align: justify;
     font-family: 'Open Sans';
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     margin-left: 10px ;
   }

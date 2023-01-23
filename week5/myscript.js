@@ -27,6 +27,7 @@
                 txt = person + ", you cant accept defeat?" + " Just kidding its just a prank.";
             }
             document.getElementById("demo").innerHTML = txt;
-            }
+        }
+        
 
-           
+                    

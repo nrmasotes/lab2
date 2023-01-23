@@ -52,6 +52,19 @@
 	  
 	  <br>
 	  <br>
+
+	  <p id="examplemess"></p>
+	  <script>
+
+	
+		let message = "";
+		
+		message = () => {
+		  return "Try clicking these buttons!";
+		}
+		
+		document.getElementById("examplemess").innerHTML = message();
+		</script>
 	  <input type="button" value="Back" onclick="goBack()">
 	  <button onclick="myFunction()">Click to see the surprise. &#128514</button>
 	  <input type="button" value="Forward" onclick="goForward()">

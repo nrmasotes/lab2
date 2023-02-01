@@ -14,6 +14,7 @@
 		<li style="float:right"><a  href="#row"></a>
 		<a class="active" href="#Aboutme">About Me</a>
 		<a href="#myportfolio">My Portfolio</a>
+		<a href="#contactme">Contact Me</a>
 		<a href="resource.html">Resources</a>
 		
 		<a href="https://www.facebook.com/nathaniel.masotes11/"><i class="fa-brands fa-facebook"></a></i>
@@ -35,44 +36,12 @@
 	  I have different hobbies from playing instruments like piano &#127929 and guitar &#127928, 
 	  sports&#127936&#127955, reading novels &#128218, and competitive video games &#127918 depending on my mood&#128528 on 
 	  which I feel I want to do. Ohhh... in case you are wondering about my height, I stand only at 6 feet flat. </p>
-
-	  <script>
-		function goBack() {
-		  window.history.back()
-		}
-		function goForward() {
-  window.history.forward()
-}
 	</script>
 	  
 	  <p>Currently, I am focusing in further developing &#128200 this website. If you wish to give suggestion(s), 
 	  you can contact &#128241 me through my given social media accounts. Though you can email me at nrmasotes@student.apc.edu.ph, please 
 	  be reminded that I cannot answer it on time, please consider checking my local time. 
 	  <button onclick="this.innerHTML=Date()">Click to see my local time. &#128355</button> </p>
-	  
-	
-	  <p id="p2">"I Can Do All Things Through Christ Who Strengthens Me!" - Philippians 4:13</p>
-
-	  <script>
-	  document.getElementById("p2").style.color = "violet";
-	  document.getElementById("p2").style.fontFamily = "Courier New";
-	  document.getElementById("p2").style.fontSize = "larger";
-	  </script>
-	  <p id="examplemess"></p>
-	  <script>
-
-	
-		let message = "";
-		
-		message = () => {
-		  return "Try clicking these buttons!";
-		}
-		
-		document.getElementById("examplemess").innerHTML = message();
-		</script>
-	  <input type="button" value="Back" onclick="goBack()">
-	  <button onclick="myFunction()">Click to see the surprise. &#128514</button>
-	  <input type="button" value="Forward" onclick="goForward()">
 
 	<p id="demo"></p>
 		</div>
@@ -106,8 +75,82 @@
 				  alt="pnr demo" width="1000px" height="250px"  style="width: 500px; 
 				  margin-left: 200px; position: relative; border-radius: 2%; margin-top: 1px;">
 			  </div>
+			  <br>
+			  <br>
+			  <br>
+			  <?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed";
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
+  }
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+<div class="row">
+		<div id="contactme">  
+			<h1>Contact me!</h1>
+			<p><span class="error">You can contact me by filling up the required form below.</span></p>
+			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+			Name: <input type="text" name="name" value="<?php echo $name;?>">
+			<span class="error">* <?php echo $nameErr;?></span>
+			<br><br>
+			E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+			<span class="error">* <?php echo $emailErr;?></span>
+			<br><br>	 
+			Comment/Suggestion: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+			<br><br>
+			<input type="submit" name="submit" value="Submit">  
+			</form>
+
+			<?php
+			echo "<h4>Your Input:</h4>";
+			echo $name;
+			echo "<br>";
+			echo $email;
+			echo "<br>";
+			echo $website;
+			echo "<br>";
+			echo $comment;
+			echo "<br>";
+			echo $gender;
+			?>
 		<br>
 		<br>
+		<br>
+		<br>
+</div>
 		<div class="footer">
 				<h3>&copy; Nathaniel Masotes  2023</h3>
 		</div>

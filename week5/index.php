@@ -92,25 +92,32 @@
 		<br>
 
 		<div class="row">
-			<div id="myportfolio">   
-			<h1>My Portfolio</h1>
-			<p>Here are the past projects that I worked together with my groupmates from my previous subjects. I did enjoy (including hard times) designing wireframes and a Python application</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-				in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<div id="getintouch">  
+				<h1>Contact Me!</h1>
+				<p><i class="fa-regular fa-envelope"></i> nrmasotes@student.apc.edu.ph</p>
+				<p><i class="fa-solid fa-phone"></i> 09496723641</p>
+	
+				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+				<input type="text" name="name" placeholder="Name" required>
+				<br>
+				<br>
+				<input type="email" name="email" placeholder="Email" required>
+				<br>
+				<br>
+				<textarea name="comment" rows="6" placeholder="Comment/Suggestion"></textarea>
+				<br>
+				<br>
+				<button type="submit" class="btn btn2">Submit</button>
+				</form>
+			<br>
+			<br>
+			<br>
+			<br>
+	<?php include 'forms.php'; ?>
+	</div>
+			<div class="footer">
+					<h3>&copy; Nathaniel Masotes  2023</h3>
 			</div>
-			  <div class="projects">
-				  <img src="RAMS Portal mobile ver.  INMEDIA (1).gif" 
-				  alt="profile pic" width="400" height="300"  style="width: 200px; 
-				  margin-left: 200px; position: relative; border-radius: 2%;">
-				  <img src="proj2.png" 
-				  alt="pnr demo" width="1000px" height="250px"  style="width: 500px; 
-				  margin-left: 200px; position: relative; border-radius: 2%; margin-top: 1px;">
-			  </div>
-		<br>
-		<br>
-		<div class="footer">
-				<h3>&copy; Nathaniel Masotes  2023</h3>
-		</div>
-<script src="myscript.js"></script>
-</body>
-</html>
+	<script src="myscript.js"></script>
+	</body>
+	</html>

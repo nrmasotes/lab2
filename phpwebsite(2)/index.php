@@ -80,11 +80,11 @@
 			  <br>
 <div class="row">
 		<div id="getintouch">  
-			<h1>Contact Me!please...</h1>
+			<h1>Contact Me! please...</h1>
 			<p><i class="fa-regular fa-envelope"></i> nrmasotes@student.apc.edu.ph</p>
 			<p><i class="fa-solid fa-phone"></i> 09496723641</p>
 
-            <form method="post" action="insert.php">  
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
             <input type="text" " placeholder="Name" id="fullName" name="fullName">
 			<br>
 			<br>
@@ -96,11 +96,12 @@
 			<br>
             <button type="submit" class="btn btn2">Submit</button>
             </form>
+			<?php include 'form.php'; ?>
 		<br>
 		<br>
 		<br>
 		<br>
-<?php include 'insert.php'; ?>
+
 		</div>
 </div>
 		<div class="footer">

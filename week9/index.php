@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="mystyle.css">
-	<link rel="shortcut icon" type="image/png" href="nm.png">
+	<link rel="shortcut icon" type="image/png" href="img/nm.png">
 	<script src="https://kit.fontawesome.com/9f49c4b2c4.js" crossorigin="anonymous"></script>
     <title>nrmasotes</title>
 
@@ -14,7 +14,7 @@
 		<li style="float:right"><a  href="#row"></a>
 		<a class="active" href="#Aboutme">About Me</a>
 		<a href="#myportfolio">My Portfolio</a>
-		<a href="#contactme">Contact Me</a>
+		<a href="#getintouch">Contact</a>
 		<a href="resource.html">Resources</a>
 		
 		<a href="https://www.facebook.com/nathaniel.masotes11/"><i class="fa-brands fa-facebook"></a></i>
@@ -22,7 +22,7 @@
 		<a href="https://www.linkedin.com/in/nathaniel-hope-masotes-92971321b/"><i class="fa-brands fa-linkedin"></i></a>
 		
 		<li style="float:left"><a  href="#row">
-			<img src="nm.png" width="25px" height="25px" overflow="hidden" margin-top="-6px" margin-right="10px"></a></li>
+			<img src="img/nm.png" width="25px" height="25px" overflow="hidden" margin-top="-6px" margin-right="10px"></a></li>
 	</main>
 
 	
@@ -46,7 +46,7 @@
 	<p id="demo"></p>
 		</div>
 		<div class="pfp">
-			<img src="pfp.gif" 
+			<img src="img/pfp.gif" 
 			alt="profile pic" width="400" height="350"  style="width: 250px; 
 			margin-left: 50px; position: relative; border-radius: 5%;" >
 		</div> 
@@ -68,88 +68,41 @@
 				in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			</div>
 			  <div class="projects">
-				  <img src="RAMS Portal mobile ver.  INMEDIA (1).gif" 
+				  <img src="img/RAMS Portal mobile ver.  INMEDIA (1).gif" 
 				  alt="profile pic" width="400" height="300"  style="width: 200px; 
 				  margin-left: 200px; position: relative; border-radius: 2%;">
-				  <img src="proj2.png" 
+				  <img src="img/proj2.png" 
 				  alt="pnr demo" width="1000px" height="250px"  style="width: 500px; 
 				  margin-left: 200px; position: relative; border-radius: 2%; margin-top: 1px;">
 			  </div>
 			  <br>
 			  <br>
 			  <br>
-			  <?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
 <div class="row">
-		<div id="contactme">  
-			<h1>Contact me!</h1>
-			<p><span class="error">You can contact me by filling up the required form below.</span></p>
-			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-			Name: <input type="text" name="name" value="<?php echo $name;?>">
-			<span class="error">* <?php echo $nameErr;?></span>
-			<br><br>
-			E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-			<span class="error">* <?php echo $emailErr;?></span>
-			<br><br>	 
-			Comment/Suggestion: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-			<br><br>
-			<input type="submit" name="submit" value="Submit">  
-			</form>
+		<div id="getintouch">  
+			<h1>Contact Me! please...</h1>
+			<p><i class="fa-regular fa-envelope"></i> nrmasotes@student.apc.edu.ph</p>
+			<p><i class="fa-solid fa-phone"></i> 09496723641</p>
 
-			<?php
-			echo "<h4>Your Input:</h4>";
-			echo $name;
-			echo "<br>";
-			echo $email;
-			echo "<br>";
-			echo $website;
-			echo "<br>";
-			echo $comment;
-			echo "<br>";
-			echo $gender;
-			?>
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+            <input type="text" placeholder="Name" id="fullName" name="fullName">
+			<br>
+			<br>
+            <input type="email" placeholder="Email" id="emailUsed" name="emailUsed">
+			<br>
+			<br>
+            <textarea rows="6" placeholder="Comment/Suggestion" id="commentInput" name="commentInput"></textarea>
+			<br>
+			<br>
+            <button type="submit" class="btn btn2">Submit</button>
+            </form>
+			<?php include 'form.php'; ?>
 		<br>
 		<br>
 		<br>
 		<br>
+
+		</div>
 </div>
 		<div class="footer">
 				<h3>&copy; Nathaniel Masotes  2023</h3>
